@@ -1,0 +1,78 @@
+*
+{
+  padding: 0px;
+  margin: 0px;
+  font-family: 'Averia Libre', cursive;
+
+}
+
+
+/*#container
+{
+  float: left;
+  width: 960px;
+  margin: 0px;
+  border: 1px;
+
+}*/
+
+#metadata
+{
+  font-size: 18px;
+  width: 320px;
+  padding-top: 10px;
+  padding-left: 40%;
+
+}
+
+#buttons
+{
+  padding-left: 200px;
+}
+
+button
+{
+  font-size: 18px;
+}
+
+a
+{
+text-decoration: none;
+}
+
+a:hover
+{
+  color: blue;
+}
+
+#nav
+{
+font-size: 22px;
+width: 100%;
+margin:0;
+padding:0;
+background-color: #67D9FF;
+}
+#nav li {
+display:inline;
+padding:0;
+margin:0;
+}
+
+#container
+{
+
+  width: 100%;
+}
+
+
+
+#video_layout
+{
+/*  padding-left: 580px;*/
+  padding-top: 20px;
+  padding-bottom: 10px;
+  background-color: #FF9A3A;
+  text-align: center;
+
+}

@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang='en'>
+  <head>
+    <meta charset='utf-8'>
+    <link rel='stylesheet' href='/style.css'>
+    <link href='http://fonts.googleapis.com/css?family=Averia+Libre' rel='stylesheet' type='text/css'>
+    <title>Memetube</title>
+  </head>
+  <body>
+    <div id="nav">
+    <nav>
+      <ul>
+        <li><a href='/'>home</a></li>
+        <li><a href='/new'>submit</a></li>
+        <li><a href='/videos'>videos</a></li>
+        <% @nav_rows.each do |row| %>
+          <li><a href='/videos/<%= row['genre'] %>'>[<%= row['genre'] %>]</a></li>
+        <% end %>
+      </ul>
+    </nav>
+    </div>
+    <div id="container">
+    <%= yield %>
+    </div>
+  </body>
+</html>

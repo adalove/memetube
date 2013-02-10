@@ -1,0 +1,25 @@
+<div id="video_layout">
+<% @rows.each do |row| %>
+  <section>
+    <div id="metadata">
+     <%= row['title'].upcase %>
+     <%= row['description'] %>
+    </div>
+    <div id="buttons">
+    <form action='/videos/<%= row['id'] %>/delete' method='post'>
+    <button>delete</button>
+    <button><a href='/videos/<%= row['id'] %>/edit'>edit</a></button>
+    </form>
+    </div>
+
+
+    <div id="video">
+    <iframe width="320" height="240" src="<%= row['video'] %>"frameborder="0"></iframe>
+    </div>
+
+    [<%= row['genre'] %>]
+  </section>
+<% end %>
+</div>
+
+
