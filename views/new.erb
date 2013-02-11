@@ -1,12 +1,26 @@
-Enter new clip
+<h2>Submit video</h2>
 
+  <ul>
 <form method='post' action='<%= @row.nil? ? "/create" : "/videos/#{@row['id']}" %>'>
+  <li>Clip Title: <br>
   <input value='<%= @row['title'] if @row %>' type='text' name='title' autofocus>
+  </li>
+  <li>Description: <br>
   <input value='<%= @row['description'] if @row %>' type='text' name='description'>
+  </li>
+  <li>Video Url: <br>
   <input value='<%= @row['video'] if @row %>' type='text' name='video'>
+  </li>
+  <li>Genre: <br>
   <input value='<%= @row['genre'] if @row %>' type='text' name='genre'>
-  <button><%= @row.nil? ? "new video" : "edit video" %></button>
+  </li>
+  <li><button><%= @row.nil? ? "submit video" : "edit video" %></button></li>
 </form>
+</ul>
+
+
+
+
 
 
 

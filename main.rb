@@ -14,6 +14,7 @@ get '/' do
 erb :home
 end
 
+
 get '/new' do
  erb :new
 end
@@ -24,11 +25,15 @@ post '/create' do
   redirect to('/videos')
 end
 
+
+
 post '/videos/:videos_id' do
   sql = "UPDATE videos SET title = '#{params[:title]}', description = '#{params[:description]}', video = '#{params[:video]}', genre = '#{params[:genre]}' WHERE id = '#{params['videos_id']}';"
   run_sql(sql)
   redirect to ('/videos')
 end
+
+
 
 get '/videos/:genre' do
   sql = "SELECT * FROM videos WHERE genre = '#{params['genre']}';"

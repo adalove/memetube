@@ -6,7 +6,18 @@
 
 }
 
+h2
+{
+  font-size: 26px;
+  text-align: center;
+  padding: 10px;
+}
 
+body
+{
+
+  background-color: #FFFFED;
+}
 /*#container
 {
   float: left;
@@ -20,19 +31,27 @@
 {
   font-size: 18px;
   width: 320px;
-  padding-top: 10px;
-  padding-left: 40%;
+  padding-top: 5px;
+  padding-left: 20px;
+  text-align: left;
+  color: #23486B;
+
 
 }
 
 #buttons
 {
   padding-left: 200px;
+
+
 }
 
 button
 {
-  font-size: 18px;
+  font-size: 24px;
+  background-color: #23486B;
+  color: #FFFFED;
+  padding: 2px;
 }
 
 a
@@ -40,29 +59,51 @@ a
 text-decoration: none;
 }
 
+a:visited
+{
+  color: #1A1F24;
+}
+
 a:hover
 {
-  color: blue;
+  color: #FF6161;
 }
 
 #nav
 {
+
 font-size: 22px;
 width: 100%;
 margin:0;
 padding:0;
+padding-bottom: 5px;
 background-color: #67D9FF;
 }
 #nav li {
+color: #1A1F24;
 display:inline;
-padding:0;
+padding:10px;
 margin:0;
 }
 
 #container
 {
-
+  background-color: #FFFFED;
   width: 100%;
+}
+
+#container li
+{
+  text-align: center;
+  padding-bottom: 10px;
+  font-size: 22px;
+}
+
+section
+{
+  display: inline-block;
+  text-align: right;
+
 }
 
 
@@ -72,7 +113,37 @@ margin:0;
 /*  padding-left: 580px;*/
   padding-top: 20px;
   padding-bottom: 10px;
-  background-color: #FF9A3A;
+  background-color: #FFFFED;
   text-align: center;
+  border: 5px solid;
 
+}
+
+#video_layout a
+{
+  color: #FFFFED;
+
+}
+
+/* here is the formatting for the new.erb page */
+
+
+
+input
+{
+  padding-left: 20px;
+  font-size: 25px;
+}
+
+#new_video
+{
+  padding-bottom: 10px;
+  text-align: center;
+  font-size: 26px;
+}
+
+#new_video li
+{
+  padding-bottom: 10px;
+  text-align: center;
 }
